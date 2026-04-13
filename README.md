@@ -99,8 +99,17 @@ That is one reason I added vector search on top of basic text search.
 ### Requirements
 
 - Python 3.12+
-- `uv` for dependency management
+- `uv` package manager
 - OpenAI API key
+
+
+### Setup
+
+### Clone the repository
+
+```bash
+git clone https://github.com/helloworld0622/github-doc-assistant.git
+cd github-doc-assistant
 
 ### Install dependencies
 
@@ -132,24 +141,6 @@ Then open the local Streamlit link shown in the terminal, usually:
 
 ```text
 http://localhost:8501
-```
-
----
-
-## Project structure
-
-```text
-project/
-├── ingest.py          # downloads repo data, parses markdown, chunks documents
-├── search_tools.py    # text / vector / hybrid search logic
-├── search_agent.py    # agent setup and prompt
-├── logs.py            # saves interaction logs
-├── agent_app.py       # command-line interface
-├── app.py             # Streamlit UI
-├── logs/              # saved logs
-├── pyproject.toml
-├── requirements.txt
-└── README.md
 ```
 
 ---
@@ -222,18 +213,6 @@ This is still a small project, so there are several things that could be improve
 
 ---
 
-## Possible next steps
-
-If I continue developing this project, I would likely add:
-
-- better hybrid ranking
-- persistent embedding storage
-- richer evaluation dataset
-- conversation memory across turns
-- support for more repository types, including code-heavy repos
-- deployment with managed secrets and cleaner logging infrastructure
-
----
 
 ## Notes
 

@@ -189,39 +189,6 @@ These numbers were useful because they made it easier to see where the system wa
 
 ---
 
-## What I learned
-
-A few things stood out while building this:
-
-- text search alone is often enough for direct keyword queries
-- vector search becomes more useful when users paraphrase
-- hybrid search is simple to add and gives better overall robustness
-- evaluation matters more than I expected
-- prompt design has a real impact on grounding and citation quality
-
----
-
-## Current limitations
-
-This is still a small project, so there are several things that could be improved:
-
-- hybrid ranking is still simple merge + dedup, not weighted fusion
-- embeddings are rebuilt at startup instead of being cached separately
-- conversation memory is limited
-- citation formatting could be improved further
-- the UI is intentionally simple
-
----
-
-
-## Notes
-
-- `.env` is ignored so API keys are not committed
-- logs are stored locally in `logs/`
-- this project is mainly meant as a learning and portfolio project, not a production system
-
----
-
 ## Credits
 
 This project was inspired by learning materials around RAG systems, agent workflows, and AI engineering practice, especially the DataTalksClub AI course workflow.
